@@ -16,6 +16,7 @@ model User {
   image        String?
  
   oauth_id     String
+  provider     String         @db.VarChar(191)
   coins        Int            @default(50)
   created_at   DateTime       @default(now())
   
